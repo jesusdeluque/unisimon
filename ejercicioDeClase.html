@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Página de Fútbol</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+
+        h1 {
+            color: #007bff;
+        }
+
+        p {
+            color: #333;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        table {
+            width: 80%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        th, td {
+            padding: 10px;
+            text-align: center;
+            border: 1px solid #ccc;
+        }
+
+        th {
+            background-color: #f2f2f2;
+        }
+
+        a {
+            color: #007bff;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>¡Bienvenido a nuestra página de fútbol!</h1>
+        <p>Descubre las últimas noticias, resultados y equipos destacados.</p>
+        <img src="https://www.yosisedefutbol.com/wp-content/uploads/2023/05/yanvar-ayinin-en-yaddaqalan-6-futbol-transferi.jpg" alt="Fútbol">
+
+        <h2>Resultados recientes</h2>
+        <table>
+            <tr>
+                <th>Equipo local</th>
+                <th>Resultado</th>
+                <th>Equipo visitante</th>
+            </tr>
+            <tr>
+                <td>Equipo A</td>
+                <td>3 - 2</td>
+                <td>Equipo B</td>
+            </tr>
+            <tr>
+                <td>Equipo C</td>
+                <td>1 - 1</td>
+                <td>Equipo D</td>
+            </tr>
+            
+        </table>
+
+        <h2>Enlaces de interés</h2>
+        <ul>
+            <li><a href="file:///C:/Users/sistemas/Desktop/noticias.html">Noticias de Fútbol</a></li>
+            <li><a href="file:///C:/Users/sistemas/Desktop/equiposdestacados.html">Calendario de partidos</a></li>
+        </ul>
+
+        
+
+        <script>
+            function mostrarLiga(liga) {
+                const ligaEspanola = document.getElementById('liga-espanola');
+                const ligaInglesa = document.getElementById('liga-inglesa');
+
+                if (liga === 'espanola') {
+                    ligaEspanola.style.display = 'block';
+                    ligaInglesa.style.display = 'none';
+                } else if (liga === 'inglesa') {
+                    ligaEspanola.style.display = 'none';
+                    ligaInglesa.style.display = 'block';
+                }
+            }
+        </script>
+    </div>
+</body>
+</html>
