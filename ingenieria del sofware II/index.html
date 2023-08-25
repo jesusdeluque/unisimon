@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Refugio El Gran David</title>
+    <style>
+        /* Estilos que ya tenías */
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #1e202d;
+            background-size: auto 100%;
+            background-position: left, right;
+            background-repeat: no-repeat;
+        }
+
+        header {
+            background-color: rgba(0, 0, 0, 0.7);
+            color: #fff;
+            text-align: center;
+            padding: 1rem;
+        }
+
+        h1 {
+            font-size: 36px;
+            margin-bottom: 10px;
+        }
+
+        .button-container {
+            display: flex;
+            justify-content: center; /* Centra los botones */
+            align-items: center;
+            margin-top: 1rem;
+        }
+
+        .button {
+            margin: 0 10px;
+            padding: 1rem 2rem;
+            background-color: #333;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            text-decoration: none;
+            text-transform: uppercase;
+        }
+
+        .button:hover {
+            background-color: #555;
+        }
+
+        img {
+            margin-top: 50px;
+            width: 600px;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .image-text {
+            text-align: center;
+            color: #fff;
+            margin-top: 20px;
+        }
+
+        .container {
+            color: #fff;
+            text-align: center;
+        }
+
+        /* Estilos para el formulario */
+
+        form {
+            background-color: rgba(0, 0, 0, 0.7);
+            padding: 20px;
+            margin-top: 20px;
+            border-radius: 5px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        textarea {
+            width: 50%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: none;
+            border-radius: 5px;
+        }
+
+        button[type="submit"] {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button[type="submit"]:hover {
+            background-color: #555;
+        }
+
+        /* Estilos para los radio buttons */
+
+        .radio-group {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+
+        .radio-group label {
+            margin-bottom: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Refugio El Gran David</h1>
+        <p>¡Dando un hogar a los amigos peludos!</p>
+    </header>
+    <div class="container">
+        <h2>Explora Nuestras Mascotas</h2>
+        <div class="button-container">
+            <a href="pagina-perros.html" class="button">Perros</a>
+            <a href="pagina-gatos.html" class="button">Gatos</a>
+            <a href="pagina-conejos.html" class="button">Conejos</a>
+        </div>
+        <img src="https://www.carozzicorp.com/wp-content/uploads/2019/02/Adopcion-2.gif" alt="">
+        <p class="image-text">¡Adopta a tu nuevo mejor amigo!</p>
+
+        <!-- Formulario -->
+        <form>
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required>
+
+            <label for="correo">Correo electrónico:</label>
+            <input type="email" id="correo" name="correo" required>
+
+            <label for="mensaje">Mensaje:</label>
+            <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+
+            <div class="radio-group">
+                <label>¿Qué mascota deseas adoptar?</label>
+                <label><input type="radio" name="mascota" value="perro"> Perro</label>
+                <label><input type="radio" name="mascota" value="gato"> Gato</label>
+                <label><input type="radio" name="mascota" value="conejo"> Conejo</label>
+            </div>
+
+            <button type="submit">Enviar</button>
+        </form>
+    </div>
+</body>
+
+</html>
